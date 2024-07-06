@@ -37,6 +37,8 @@ data "aws_iam_policy_document" "allow_s3_bucket_management" {
       "s3:CreateBucket",
       "s3:DeleteBucket",
       "s3:DeleteBucketPolicy",
+      "s3:DeleteObject",
+      "s3:DeleteObjectVersion",
       "s3:GetAccelerateConfiguration",
       "s3:GetBucketAcl",
       "s3:GetBucketCORS",
@@ -56,6 +58,7 @@ data "aws_iam_policy_document" "allow_s3_bucket_management" {
       "s3:GetLifecycleConfiguration",
       "s3:GetReplicationConfiguration",
       "s3:ListBucket",
+      "s3:ListBucketVersions",
       "s3:PutBucketPolicy",
       "s3:PutBucketPublicAccessBlock",
     ]
